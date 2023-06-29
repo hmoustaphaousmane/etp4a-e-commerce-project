@@ -1,24 +1,36 @@
-# README
+# README.md
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is an online store for a kitten photo store. The store will display
+various products, then customers will be able to register, fill their shopping
+cart, and pay for the item with Stripe to receive it by email.
 
-Things you may want to cover:
+## Requirements :
 
-* Ruby version
+* Ruby 3.1.1
 
-* System dependencies
+* Rails 7.0.5.1
 
-* Configuration
+## Documentation on necessary steps to get and run the application project.
 
-* Database creation
+* Download the project (HTTP or SSH) :
+  - Using HTTP : ```git clone https://github.com/hmoustaphaousmane/etp4a-e-commerce-project.git```
+  - Using SSH : ```git clone git@github.com:hmoustaphaousmane/etp4a-e-commerce-project.git```
 
-* Database initialization
+* Navigate to the root directory : ```cd etp4a-e-commerce-projectr```
 
-* How to run the test suite
+* Install dependencies (gems) : ```bundle install```
 
-* Services (job queues, cache servers, search engines, etc.)
+* Create the database : ```rails db:create``` or ```rake db:create```
 
-* Deployment instructions
+* Checkout the migrations status (up/down) : ```rails db:migrate:status```
 
-* ...
+* Make the migrations : ```rails db:migrate```
+
+* Checkout again the migration status (up/down) : ```rails db:migrate:status```
+
+* Populate (seed) the database : ```rails db:seed```
+
+* Run the server : ```rails server``` or ```rails s``` (or ```rs``` if alias rs is created)
+
+* Open [http://127.0.0.1:3000](http://127.0.0.1:3000) or [http://[::1]:3000](http://[::1]:3000) in the broswer
+
