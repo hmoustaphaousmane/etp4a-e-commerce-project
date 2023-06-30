@@ -16,13 +16,14 @@
   <body>
     <%= render 'layouts/header' %>
     <div class='container'>
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <%# <% flash.each do |message_type, message| >
+        <div class="alert alert-<%= message_type >"><%= message ></div>
       <% end %>
       <%= yield %>
     </div>
 
     <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+
   </body>
 </html>

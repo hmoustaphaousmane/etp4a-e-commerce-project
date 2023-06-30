@@ -20,19 +20,22 @@
 
         </div>
 
+        <br/>
+
       <div class="form-group">
 
         <%= f.label :password %>
 
         <% if @minimum_password_length %>
 
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-
         <% end %><br />
 
         <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
 
       </div>
+
+      <br/>
+
 
       <div class="form-group">
 
@@ -44,11 +47,15 @@
 
       <div class="actions mt-5">
 
-        <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
+      <div style="text-align:center;">
 
-        <div  class = "btn btn-lg btn-outline-primary btn-block" > <%= render "devise/shared/links"%> </div>
+        <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %> <br/> <br/>
+
+        <div > <%= render "devise/shared/links"%> </div>
 
         </div>
+
+      </div>
 
       <% end %>
 
